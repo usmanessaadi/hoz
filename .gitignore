@@ -1,0 +1,17 @@
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.backup
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+<<<<<<< HEAD
+
+=======
+/etc/hosts
+>>>>>>> 9d64afe94241a51c492bf877ba800ba1a4a88ab7

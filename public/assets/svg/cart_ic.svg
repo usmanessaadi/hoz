@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+  <g id="cart_ic" transform="translate(-1305 -35)">
+    <g id="Group_324" data-name="Group 324" transform="translate(-99 -1)">
+      <g id="Ellipse_39" data-name="Ellipse 39" transform="translate(1404 36)" fill="none" stroke="#dedede" stroke-width="2">
+        <circle cx="17" cy="17" r="17" stroke="none"/>
+        <circle cx="17" cy="17" r="16" fill="none"/>
+      </g>
+    </g>
+    <g id="The-Icons" transform="translate(1314 45)">
+      <path id="Combined-Shape" d="M5.9,13.13l.538,1.98h10.6l.541-1.98Zm12.968-1.584a.573.573,0,0,1,.582.766l-1.959,7.182a1.1,1.1,0,0,1-1,.766H6.984a1.092,1.092,0,0,1-1-.766L4.027,12.311a.573.573,0,0,1,.582-.766H6.527L9.468,6.4a.792.792,0,1,1,1.376.786l-2.491,4.36h6.776l-2.491-4.36A.792.792,0,1,1,14.012,6.4l2.941,5.146ZM7.409,18.675h8.662l.541-1.98H6.871Z" transform="translate(-4 -6)" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

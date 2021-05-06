@@ -1,0 +1,246 @@
+header nav {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+header nav ul {
+  margin-left: auto !important;
+  margin-right: 15px;
+}
+
+#main {
+  background: url("../assets/images/hmc_main_img.jpg") no-repeat center center;
+  background-size: cover;
+  height: calc(100vh - 120px);
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  padding-left: 40px;
+}
+
+#main .content {
+  width: 50%;
+}
+
+#main .content h1 {
+  font-size: 3em;
+  font-weight: 500;
+}
+
+#main .content h5 {
+  margin-top: 26px;
+  font-size: 1.01em;
+  font-weight: normal;
+}
+
+#main .content p {
+  font-weight: normal;
+  font-size: .9em;
+  width: 74%;
+}
+
+#main .content a.hmc_cta_btn {
+  margin-top: 40px;
+  border: 2px solid #fff;
+  font-size: .9em;
+  font-weight: 500;
+  padding: 12px 38px;
+  color: #fff;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+#main .content a.hmc_cta_btn:hover {
+  background: #fff !important;
+  color: #000;
+}
+
+section.hmc {
+  padding: 160px 50px;
+  text-align: center;
+}
+
+section.hmc h3 {
+  font-size: 2.6em;
+  font-weight: 500;
+}
+
+section.hmc p {
+  font-size: 1.75em;
+  font-weight: 500;
+}
+
+section.hmc .hmc_questionaire {
+  margin-top: 116px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+section.hmc .hmc_questionaire .hmc_left {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: 999;
+}
+
+section.hmc .hmc_questionaire .hmc_left .step {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+}
+
+section.hmc .hmc_questionaire .hmc_left .step:hover h5 {
+  color: #0E95FF;
+}
+
+section.hmc .hmc_questionaire .hmc_left .step h5 {
+  margin-top: 4px;
+  font-size: 1em;
+  font-weight: 500;
+  color: #AAAAAA;
+}
+
+section.hmc .hmc_questionaire .hmc_left .btn-restart {
+  margin-top: 56px;
+}
+
+section.hmc .hmc_questionaire .hmc_right {
+  margin-top: 40px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.hmc .hmc_questionaire .hmc_right .choice {
+  margin-right: 6%;
+  position: relative;
+}
+
+section.hmc .hmc_questionaire .hmc_right .choice a.choice_img {
+  height: 150px;
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 5px #DEDEDE solid;
+  border-radius: 50%;
+}
+
+section.hmc .hmc_questionaire .hmc_right .choice a.choice_img img {
+  width: 46px;
+}
+
+section.hmc .hmc_questionaire .hmc_right .choice:hover svg g {
+  stroke: #0E95FF !important;
+  fill: #0E95FF !important;
+}
+
+section.hmc .hmc_questionaire .hmc_right .choice .play_btn {
+  position: absolute;
+  left: 0;
+  bottom: 70px;
+  cursor: pointer;
+}
+
+section.hmc .hmc_questionaire .hmc_right .choice .video_explainer {
+  position: absolute;
+  left: -60%;
+  top: 50%;
+  width: 60%;
+}
+
+section.hmc .hmc_questionaire .hmc_right .hmc_right_btn {
+  margin-top: 120px;
+  margin-left: 5%;
+}
+
+.container {
+  width: 94% !important;
+  max-width: 94%;
+}
+
+.btn {
+  padding: 10px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #0E95FF;
+  border: 2px solid #0E95FF;
+  border-radius: 5px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.btn svg path {
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.btn:hover {
+  background: #0E95FF;
+  color: #fff;
+}
+
+.btn:hover svg path {
+  stroke: #fff;
+  fill: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  #main {
+    background: url("../assets/images/hmc_main_img.jpg") no-repeat 60% center;
+  }
+  #main .content {
+    width: 90%;
+  }
+  #main .content h1 {
+    font-size: 2.4em;
+    font-weight: 500;
+  }
+  #main .content h5 {
+    margin-top: 26px;
+    font-size: 1.01em;
+    font-weight: normal;
+  }
+  #main .content p {
+    font-weight: normal;
+    font-size: .9em;
+    width: 90%;
+  }
+  #main .content a.hmc_cta_btn {
+    margin-top: 40px;
+    border: 2px solid #fff;
+    font-size: .9em;
+    font-weight: 500;
+    padding: 12px 38px;
+    color: #fff;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+  }
+  #main .content a.hmc_cta_btn:hover {
+    background: #fff !important;
+    color: #000;
+  }
+}
+/*# sourceMappingURL=hmc.css.map */

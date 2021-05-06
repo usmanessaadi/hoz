@@ -1,0 +1,250 @@
+// HMC
+
+header {
+    nav {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+
+        ul {
+            margin-left: auto !important;
+            margin-right: 15px;
+        }
+    }
+}
+
+
+#main {
+    background: url('../assets/images/hmc_main_img.jpg') no-repeat center center;
+    background-size: cover;
+    height: calc(100vh - 120px);
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding-left: 40px;
+
+    .content {
+        width: 50%;
+
+        h1 {
+            font-size: 3em;
+            font-weight: 500;
+        }
+
+        h5 {
+            margin-top: 26px;
+            font-size: 1.01em;
+            font-weight: normal;
+        }
+
+        p {
+            font-weight: normal;
+            font-size: .9em;
+            width: 74%;
+        }
+
+        a.hmc_cta_btn {
+            margin-top: 40px;
+            border: 2px solid #fff;
+            font-size: .9em;
+            font-weight: 500;
+            padding: 12px 38px;
+            color: #fff;
+            transition: all .2s ease;
+
+            &:hover {
+                background: #fff !important;
+                color: #000;
+            }
+        }
+    }
+}
+
+section.hmc {
+    padding: 160px 50px;
+    text-align: center;
+
+    h3 {
+        font-size: 2.6em;
+        font-weight: 500;
+    }
+
+    p {
+        font-size: 1.75em;
+        font-weight: 500;
+    }
+
+    .hmc_questionaire {
+        margin-top: 116px;
+        display: flex;
+        width: 100%;
+        position: relative;
+
+        .hmc_left {
+            width: fit-content;
+            z-index: 999;
+
+            .step {
+                text-align: left;
+                display: flex;
+                text-decoration: none;
+
+                &:hover h5 {
+                    color: #0E95FF;
+                }
+
+                h5 {
+                    margin-top: 4px;
+                    font-size: 1em;
+                    font-weight: 500;
+                    color: #AAAAAA;
+                }
+            }
+
+            .btn-restart {
+                margin-top: 56px;
+            }
+
+        }
+
+        .hmc_right {
+            margin-top: 40px;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            align-items: center;
+
+            .choice {
+                margin-right: 6%;
+                position: relative;
+
+                a.choice_img {
+                    height: 150px;
+                    width: 150px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 5px #DEDEDE solid;
+                    border-radius: 50%;
+
+                    img {
+                        width: 46px;
+                    }
+                }
+
+                &:hover {
+                    // a {
+                    //     border: 5px #0E95FF solid;
+                    // }
+
+                    svg g {
+                        stroke: #0E95FF !important;
+                        fill: #0E95FF !important;
+                    }
+                }
+
+                .play_btn {
+                    position: absolute;
+                    left: 0;
+                    bottom: 70px;
+                    cursor: pointer;
+                }
+
+                .video_explainer {
+                    position: absolute;
+                    left: -60%;
+                    top: 50%;
+                    width: 60%;
+                }
+            }
+
+            .hmc_right_btn {
+                margin-top: 120px;
+                margin-left: 5%;
+
+
+            }
+        }
+    }
+
+}
+
+
+.container {
+    width: 94% !important;
+    max-width: 94%;
+}
+
+.btn {
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0E95FF;
+    border: 2px solid #0E95FF;
+    border-radius: 5px;
+    transition: all .2s ease;
+
+    svg path {
+        transition: all .2s ease;
+    }
+
+    &:hover {
+        background: #0E95FF;
+        color: #fff;
+
+        svg path {
+            stroke: #fff;
+            fill: #fff;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    #main {
+        background: url('../assets/images/hmc_main_img.jpg') no-repeat 60% center;
+
+        .content {
+            width: 90%;
+
+            h1 {
+                font-size: 2.4em;
+                font-weight: 500;
+            }
+
+            h5 {
+                margin-top: 26px;
+                font-size: 1.01em;
+                font-weight: normal;
+            }
+
+            p {
+                font-weight: normal;
+                font-size: .9em;
+                width: 90%;
+            }
+
+            a.hmc_cta_btn {
+                margin-top: 40px;
+                border: 2px solid #fff;
+                font-size: .9em;
+                font-weight: 500;
+                padding: 12px 38px;
+                color: #fff;
+                transition: all .2s ease;
+
+                &:hover {
+                    background: #fff !important;
+                    color: #000;
+                }
+            }
+        }
+    }
+
+
+
+}

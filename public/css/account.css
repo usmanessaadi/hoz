@@ -1,0 +1,979 @@
+#main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  grid-gap: 18px;
+  margin-top: 20px;
+}
+
+#main .account_menu .hoz_card {
+  padding: 0 !important;
+}
+
+#main .account_menu .nav-item {
+  margin-top: 8px;
+  padding: 2px 14px;
+  position: relative;
+}
+
+#main .account_menu .nav-item.active:after {
+  content: "";
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: #0e95ff;
+}
+
+#main .account_menu .nav-item.active .nav-link {
+  color: #0e95ff !important;
+}
+
+#main .account_menu .nav-item.active .nav-link svg {
+  fill: #0e95ff;
+}
+
+#main .account_menu .nav-link {
+  color: black;
+  -webkit-transition: color 0.1s ease;
+  transition: color 0.1s ease;
+  font-size: 14px;
+}
+
+#main .account_menu .nav-link svg {
+  margin-bottom: 2px;
+  -webkit-transition: fill 0.1s ease;
+  transition: fill 0.1s ease;
+}
+
+#main .account_menu .nav-link:hover {
+  color: #0e95ff;
+}
+
+#main .account_menu .nav-link:hover svg {
+  fill: #0e95ff;
+}
+
+#main .account_menu .bottom_menu .nav-item:last-child {
+  margin-top: 90px;
+  border-top: 1px solid #dedede;
+}
+
+#main .account_menu .bottom_menu .nav-item:last-child .nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #0e95ff;
+}
+
+#main .my_account .account_section_title {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+#main .my_account .cards {
+  gap: 12px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+#main .my_account .card {
+  height: 300px;
+  position: relative;
+}
+
+#main .my_account .card .card-header button {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 0;
+}
+
+#main .my_account .card .card-header button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#main .my_account .card .card-body {
+  padding: 6px 19px 14px;
+}
+
+#main .my_account .card .card-body .info {
+  margin-top: 14px;
+}
+
+#main .my_account .card .card-body .info p {
+  font-size: 14px;
+  color: #aaaaaa;
+  margin-bottom: 9px;
+}
+
+#main .my_account .card .card-body .info h5 {
+  font-size: 14px;
+  color: #000;
+  width: 80%;
+  font-weight: normal;
+}
+
+#main .my_account .card .card-footer {
+  position: absolute;
+  bottom: 0;
+}
+
+#main .my_account .card .card-footer a {
+  color: #0e95ff;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+#main .my_account .card.order-card .card-header p {
+  color: #aaaaaa;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+#main .my_account .card.order-card .card-header p span {
+  color: #000000;
+}
+
+#main .my_account .card.order-card .card-body {
+  padding: 0 10px 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-y: scroll;
+  height: 160px;
+}
+
+#main .my_account .card.order-card .card-body .order_info {
+  width: 70%;
+}
+
+#main .my_account .card.order-card .card-body .order_info .line {
+  margin: 0;
+}
+
+#main .my_account .card.order-card .card-body .order_info .order_info-product {
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 14px;
+  border-right: 1px solid #dedede;
+}
+
+#main .my_account .card.order-card .card-body .order_info .order_info-product .order_product-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#main .my_account .card.order-card .card-body .order_info .order_info-product .order_product-detail .order_product_brand {
+  font-size: 12px;
+  color: #aaaaaa;
+  margin-bottom: 2px;
+}
+
+#main .my_account .card.order-card .card-body .order_info .order_info-product .order_product-detail h3.order_product_name {
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+}
+
+#main .my_account .card.order-card .card-body .order_info .order_info-product .order_product-detail .order_product_qty_and_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+#main .my_account .card.order-card .card-body .order_info .order_info-product .order_product-detail .order_product_qty_and_price .qty,
+#main .my_account .card.order-card .card-body .order_info .order_info-product .order_product-detail .order_product_qty_and_price .price {
+  font-size: 12px;
+  color: #aaaaaa;
+  margin: 0;
+}
+
+#main .my_account .card.order-card .card-body .order_info .order_info-product .order_product-detail .order_product_qty_and_price .qty span,
+#main .my_account .card.order-card .card-body .order_info .order_info-product .order_product-detail .order_product_qty_and_price .price span {
+  color: #000000;
+}
+
+#main .my_account .card.order-card .card-body .order_info .order_info-product .order_product-img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 0.5px solid #dedede;
+  padding: 6px !important;
+  -webkit-box-shadow: 0px 2px 0px 0px #e7eaed;
+  box-shadow: 0px 2px 0px 0px #e7eaed;
+}
+
+#main .my_account .card.order-card .card-body .order_info .order_info-product .order_product-img img {
+  width: 68px;
+}
+
+#main .my_account .card.order-card .card-body .order_delivery {
+  width: 30%;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main .my_account .card.order-card .card-body .order_delivery .order_delivery_info {
+  padding: 0 10px;
+}
+
+#main .my_account .card.order-card .card-body .order_delivery .order_delivery_info p {
+  margin: 0;
+}
+
+#main .my_account .card.order-card .card-body .order_delivery .order_delivery_info .order_delivery_status {
+  font-size: 12px;
+  color: #2ecc71;
+}
+
+#main .my_account .card.order-card .card-body .order_delivery .order_delivery_info .order_delivery_time {
+  font-size: 12px;
+  color: #aaaaaa;
+}
+
+#main .my_account .card.order-card .card-body .order_delivery .order_delivery_info .order_delivery_time span {
+  color: #000;
+}
+
+#main .account_orders .cards {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+#main .account_orders .card.order-card {
+  height: 100%;
+  border: 0;
+}
+
+#main .account_orders .card.order-card .order_header_title {
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main .account_orders .card.order-card .order_header_title h2 {
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#main .account_orders .card.order-card .order_header_title .card_info_title {
+  width: 70%;
+}
+
+#main .account_orders .card.order-card .order_header_title .card_delivery_title {
+  width: 30%;
+  padding-left: 30px;
+}
+
+#main .account_orders .card.order-card .order_header_detail {
+  background-color: #f6f6f6 !important;
+  border-radius: 5%;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+#main .account_orders .card.order-card .order_header_detail .order_details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 35px;
+}
+
+#main .account_orders .card.order-card .order_header_detail p {
+  font-size: 14px;
+}
+
+#main .account_orders .card.order-card .order_header_detail a {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: #0e95ff;
+  text-decoration: none !important;
+  font-size: 12px;
+}
+
+#main .account_orders .card.order-card .card-body {
+  height: 100%;
+  overflow-y: auto;
+  padding: 0;
+}
+
+#main .account_orders .card.order-card .card-body .order_info {
+  padding: 14px 0 0 20px;
+}
+
+#main .account_orders .card.order-card .card-body .order_delivery {
+  padding: 20px;
+  height: 100%;
+  display: block;
+}
+
+#main .account_orders .card.order-card .card-body .order_delivery .order_delivery_info {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#main .account_saved_products .saved_products_types {
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+#main .account_saved_products .saved_products_types a {
+  color: #0e95ff;
+  padding: 6px 24px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 2px solid #0e95ff;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-right: 16px;
+}
+
+#main .account_saved_products .saved_products_types a.active_type {
+  background: #0e95ff;
+  color: #fff;
+}
+
+#main .account_saved_products .saved_products_types a:hover {
+  background: #0e95ff;
+  color: #fff;
+}
+
+#main .account_saved_products .card {
+  border: 0;
+}
+
+#main .account_saved_products .card .card-body {
+  overflow-y: auto !important;
+  padding: 0 20px !important;
+}
+
+#main .account_saved_products .saved_products {
+  width: 100% !important;
+}
+
+#main .account_saved_products .saved_products .line {
+  margin-bottom: 0 !important;
+}
+
+#main .account_saved_products .saved_products .saved_product {
+  border: 0 !important;
+}
+
+#main .account_saved_products .saved_products .saved_product .saved_product_details {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 14px;
+}
+
+#main .account_saved_products .saved_products .saved_product .saved_product_actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  width: 34%;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#main .account_saved_products .saved_products .saved_product .saved_product_actions a {
+  color: #0e95ff;
+  text-decoration: none;
+}
+
+#main .account_saved_products .saved_products .saved_product .saved_product_actions a.deleteProduct {
+  color: #000;
+}
+
+#main .account_saved_products .saved_products .saved_product .saved_product_actions a.deleteProduct:hover {
+  color: red;
+}
+
+#main .account_recently_seen .shop_cards {
+  margin-top: 20px;
+  padding: 0 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[7];
+      grid-template-rows: repeat(7, 1fr);
+  grid-gap: 6px;
+}
+
+#main .account_personal_information .personal_information_form_container {
+  padding: 20px;
+}
+
+#main .account_personal_information .personal_information_form_container form .form-row .col-md-6 {
+  padding-right: 10px;
+}
+
+#main .account_personal_information .personal_information_form_container form .form-row .col-md-6 div {
+  display: none;
+}
+
+#main .account_personal_information .personal_information_form_container form .form-row label,
+#main .account_personal_information .personal_information_form_container form .form-row input {
+  color: #aaaaaa;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+#main .account_personal_information .personal_information_form_container form .form-row input {
+  color: #000;
+  border: none;
+  border-bottom: 2px solid #dedede;
+  border-radius: 0;
+  padding-left: 0;
+}
+
+#main .account_personal_information .personal_information_form_container form .form-row input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-bottom: 2px solid #0e95ff;
+}
+
+#main .account_personal_information .personal_information_form_container form .email_div input {
+  position: relative !important;
+}
+
+#main .account_personal_information .personal_information_form_container form .email_div .confirm_email {
+  color: #0e95ff !important;
+  font-size: 14px;
+  position: absolute;
+  top: 46%;
+  right: 10px;
+  text-decoration: none;
+}
+
+#main .account_personal_information .personal_information_form_container form button {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 90px;
+  color: #fff;
+  background: #0e95ff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 5px 0px 0px #e7eaed;
+  box-shadow: 0px 5px 0px 0px #e7eaed;
+}
+
+#main .account_personal_information .personal_information_form_container .social_media_links {
+  background: #f6f6f6;
+  border-radius: 5px;
+  margin: 30px 0;
+}
+
+#main .account_personal_information .personal_information_form_container .social_media_links .line {
+  margin: 0 !important;
+}
+
+#main .account_personal_information .personal_information_form_container .social_media_links .so_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px 30px;
+}
+
+#main .account_personal_information .personal_information_form_container .social_media_links .so_link img {
+  margin-right: 23px;
+}
+
+#main .account_personal_information .personal_information_form_container .social_media_links .so_link a {
+  text-decoration: none;
+  color: #0e95ff;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+#main .account_personal_information .personal_information_form_container .social_media_links .so_link a.disabled {
+  color: #aaaaaa;
+  pointer-events: none;
+  cursor: default;
+  text-transform: italic;
+}
+
+#main .account_addresses .account_section_title a {
+  color: #0e95ff;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#main .account_addresses .account_addresses_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-gap: 36px;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+#main .account_addresses .account_addresses_container .card.card_address {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  width: 100%;
+  padding-top: 16px;
+  border-radius: 5px;
+}
+
+#main .account_addresses .account_addresses_container .card.card_address.default_address {
+  border: 2px solid #0e95ff;
+}
+
+#main .account_addresses .account_addresses_container .card.card_address.default_address .default_address_link {
+  color: #aaaaaa !important;
+  cursor: default;
+  pointer-events: none;
+}
+
+#main .account_addresses .account_addresses_container .card.card_address .card-body {
+  height: 190px;
+}
+
+#main .account_addresses .account_addresses_container .card.card_address .card-body .address_name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#main .account_addresses .account_addresses_container .card.card_address .card-body .address {
+  width: 100%;
+  font-size: 14px;
+}
+
+#main .account_addresses .account_addresses_container .card.card_address .card-body a.set_address_link {
+  color: #0e95ff;
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+#main .account_addresses .account_addresses_container .card.card_address .card-footer.address_actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+}
+
+#main .account_addresses .account_addresses_container .card.card_address .card-footer.address_actions a {
+  padding: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border-top: 1px solid #dedede;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+#main .account_addresses .account_addresses_container .card.card_address .card-footer.address_actions a:last-child {
+  border-left: 1px solid #dedede;
+  color: #ff2727;
+}
+
+#main .change_your_password .change_your_password_form_container {
+  padding: 20px;
+}
+
+#main .change_your_password .change_your_password_form_container form .form-row .col-md-6 {
+  padding-right: 10px;
+}
+
+#main .change_your_password .change_your_password_form_container form .form-row label,
+#main .change_your_password .change_your_password_form_container form .form-row input {
+  color: #aaaaaa;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+#main .change_your_password .change_your_password_form_container form .form-row input {
+  color: #000;
+  border: none;
+  border-bottom: 2px solid #dedede;
+  border-radius: 0;
+  padding-left: 0;
+}
+
+#main .change_your_password .change_your_password_form_container form .form-row input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-bottom: 2px solid #0e95ff;
+}
+
+#main .change_your_password .change_your_password_form_container form button {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 90px;
+  color: #fff;
+  background: #0e95ff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 5px 0px 0px #e7eaed;
+  box-shadow: 0px 5px 0px 0px #e7eaed;
+}
+
+#main .change_your_password .change_your_password_form_container form a.forget_password_link {
+  color: #0e95ff;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+#main .communication_preferences {
+  height: 460px;
+}
+
+#main .communication_preferences .communication_preferences_container {
+  padding: 20px;
+  height: 460px;
+  position: relative;
+}
+
+#main .communication_preferences .communication_preferences_container .card {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 10px;
+}
+
+#main .communication_preferences .communication_preferences_container .card .card-header {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#main .communication_preferences .communication_preferences_container .card .card-header .card_header_text {
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#main .communication_preferences .communication_preferences_container .card .card-header .card_header_text p {
+  margin: 0;
+}
+
+#main .communication_preferences .communication_preferences_container .card .card-header .card_header_text .if_no_email_provided {
+  color: #aaaaaa;
+}
+
+#main .communication_preferences .communication_preferences_container .card .card-header .card_header_text .if_no_email_provided span {
+  color: #000;
+}
+
+#main .communication_preferences .communication_preferences_container .card .card-header a {
+  color: #0e95ff;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#main .communication_preferences .communication_preferences_container .card .card-body .custom-checkbox label {
+  color: #000;
+  font-size: 14px;
+}
+
+#main .communication_preferences .communication_preferences_container a.save-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+#main .not_added .hoz_card {
+  height: 546px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main .not_added .hoz_card .content {
+  text-align: center;
+}
+
+#main .not_added .hoz_card .content h5 {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+#main .not_added .hoz_card .content p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+#main .not_added .hoz_card .content .save-btn {
+  padding: 10px 50px !important;
+  display: inline;
+}
+
+.confirmation_modal .modal-dialog {
+  width: 800px !important;
+  max-width: 60% !important;
+}
+
+.confirmation_modal .modal-header .modal-title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.confirmation_modal .modal-body {
+  font-size: 14px !important;
+  font-weight: normal;
+}
+
+.confirmation_modal .modal-body span.email {
+  font-weight: bold;
+}
+
+.confirmation_modal .modal-footer {
+  width: 100%;
+  padding: 0;
+}
+
+.confirmation_modal .modal-footer a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  color: #0e95ff;
+  text-decoration: none;
+}
+
+.confirmation_modal.add_address_modal {
+  padding: 20px;
+}
+
+.confirmation_modal.add_address_modal .modal-content {
+  padding: 10px;
+}
+
+.confirmation_modal.add_address_modal form .form-row .col-md-6 {
+  padding-right: 10px;
+}
+
+.confirmation_modal.add_address_modal form .form-row label,
+.confirmation_modal.add_address_modal form .form-row input,
+.confirmation_modal.add_address_modal form .form-row select {
+  color: #aaaaaa;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.confirmation_modal.add_address_modal form .form-row input,
+.confirmation_modal.add_address_modal form .form-row select {
+  color: #000;
+  border: none;
+  border-bottom: 2px solid #dedede;
+  border-radius: 0;
+  padding-left: 0;
+}
+
+.confirmation_modal.add_address_modal form .form-row input:focus,
+.confirmation_modal.add_address_modal form .form-row select:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-bottom: 2px solid #0e95ff;
+}
+
+.confirmation_modal.add_address_modal form .email_div input {
+  position: relative !important;
+}
+
+.confirmation_modal.add_address_modal form .email_div .confirm_email {
+  color: #0e95ff !important;
+  font-size: 14px;
+  position: absolute;
+  top: 46%;
+  right: 10px;
+  text-decoration: none;
+}
+
+.confirmation_modal.add_address_modal form button {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 90px;
+  color: #fff;
+  background: #0e95ff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 5px 0px 0px #e7eaed;
+  box-shadow: 0px 5px 0px 0px #e7eaed;
+}
+
+.confirmation_modal.add_address_modal .btn-exit {
+  background: #DEDEDE !important;
+  color: #000;
+}
+
+.confirmation_modal.add_address_modal .btn-exit:hover {
+  background: #cfcfcf !important;
+}
+
+input.is-valid {
+  border-bottom: 2px solid #2ecc71 !important;
+}
+
+input.is-invalid {
+  border-bottom: 2px solid red !important;
+}
+
+.field-icon {
+  float: right;
+  margin-left: -25px;
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+  -webkit-transform: translateX(-6px);
+          transform: translateX(-6px);
+  color: #aaaaaa;
+}
+
+.field-icon.clicked {
+  color: #0e95ff;
+}
+
+a.save-btn {
+  background-color: #0e95ff;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 80px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 42px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 5px 0px 0px #e7eaed;
+  box-shadow: 0px 5px 0px 0px #e7eaed;
+}
+
+a.save-btn:hover {
+  background-color: #0c8ff3 !important;
+}
+/*# sourceMappingURL=account.css.map */

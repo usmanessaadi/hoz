@@ -1,0 +1,371 @@
+.signinup_page {
+  margin-top: 20px !important;
+}
+
+.signinup_page .hoz_card {
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+.signinup_page .hoz_card .lefty_container {
+  width: 100%;
+  padding: 0;
+  border-radius: 5px 0px 0px 5px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signinup_page .hoz_card .lefty_container .content {
+  width: 80%;
+}
+
+.signinup_page .hoz_card .lefty_container .content h5 {
+  text-transform: uppercase;
+  color: #0E95FF;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.signinup_page .hoz_card .lefty_container .content form {
+  margin-top: 52px;
+}
+
+.signinup_page .hoz_card .lefty_container .content form label,
+.signinup_page .hoz_card .lefty_container .content form input {
+  color: #aaaaaa;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.signinup_page .hoz_card .lefty_container .content form input {
+  color: #000;
+  border: none;
+  border-bottom: 2px solid #dedede;
+  border-radius: 0;
+  padding-left: 0;
+}
+
+.signinup_page .hoz_card .lefty_container .content form input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-bottom: 2px solid #0e95ff;
+}
+
+.signinup_page .hoz_card .lefty_container .content form input::-webkit-input-placeholder {
+  color: #AAAAAA;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.signinup_page .hoz_card .lefty_container .content form input:-ms-input-placeholder {
+  color: #AAAAAA;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.signinup_page .hoz_card .lefty_container .content form input::-ms-input-placeholder {
+  color: #AAAAAA;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.signinup_page .hoz_card .lefty_container .content form input::placeholder {
+  color: #AAAAAA;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.signinup_page .hoz_card .lefty_container .content form .forgot-password-link {
+  float: right;
+  font-size: 14px;
+  text-decoration: none;
+  color: #0E95FF;
+}
+
+.signinup_page .hoz_card .lefty_container .content form .field-icon {
+  float: right;
+  margin-left: -25px;
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+  -webkit-transform: translateX(-6px);
+          transform: translateX(-6px);
+  color: #aaaaaa;
+}
+
+.signinup_page .hoz_card .lefty_container .content form .field-icon.clicked {
+  color: #0e95ff;
+}
+
+.signinup_page .hoz_card .lefty_container .content form .sign-up-btn {
+  margin-top: 15px;
+  background-color: #0e95ff;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 80px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 5px 0px 0px #e7eaed;
+  box-shadow: 0px 5px 0px 0px #e7eaed;
+}
+
+.signinup_page .hoz_card .lefty_container .content form .sign-up-btn:hover {
+  background-color: #0c8ff3 !important;
+}
+
+.signinup_page .hoz_card .lefty_container .content p {
+  font-size: 14px;
+  margin-bottom: 0;
+  color: #AAAAAA;
+}
+
+.signinup_page .hoz_card .lefty_container .content .social-login-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.signinup_page .hoz_card .lefty_container .content .social-login-buttons .facebook-btn,
+.signinup_page .hoz_card .lefty_container .content .social-login-buttons .google-btn {
+  color: #fff;
+  padding: 12px 66px;
+  border-radius: 5px;
+}
+
+.signinup_page .hoz_card .lefty_container .content .social-login-buttons .facebook-btn {
+  background: #385C8E;
+}
+
+.signinup_page .hoz_card .lefty_container .content .social-login-buttons .google-btn {
+  background: #F24235;
+}
+
+.signinup_page .hoz_card .lefty_container .sign-up-lefty {
+  opacity: 0;
+  display: none;
+}
+
+.signinup_page .hoz_card .lefty_container .sign-up-lefty.show {
+  display: block;
+  opacity: 1 !important;
+}
+
+.signinup_page .hoz_card .lefty_container .sign-in-lefty {
+  display: block;
+  opacity: 1 !important;
+}
+
+.signinup_page .hoz_card .lefty_container .sign-in-lefty.hide {
+  opacity: 0;
+  display: none;
+}
+
+.signinup_page .hoz_card .righty_container {
+  padding: 0;
+  width: 100%;
+  background: url("../assets/images/signin.jpg");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0 !important;
+}
+
+.signinup_page .hoz_card .righty_container:after {
+  content: " ";
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: #0e97ffdf;
+  position: absolute;
+  border-radius: 0 5px 5px 0 !important;
+}
+
+.signinup_page .hoz_card .righty_container .content {
+  text-align: center;
+  z-index: 999;
+  width: 70%;
+}
+
+.signinup_page .hoz_card .righty_container .content h5 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 29px;
+}
+
+.signinup_page .hoz_card .righty_container .content p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.signinup_page .hoz_card .righty_container .content a.btn {
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 12px 50px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 29px;
+  -webkit-transition: background .2s ease, color .2s ease;
+  transition: background .2s ease, color .2s ease;
+}
+
+.signinup_page .hoz_card .righty_container .content a.btn:hover {
+  background: #fff;
+  color: #0E95FF;
+}
+
+.signinup_page .hoz_card .righty_container.sign-up-righty {
+  opacity: 0;
+  display: none;
+}
+
+.signinup_page .hoz_card .righty_container.sign-up-righty.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1 !important;
+}
+
+.signinup_page .hoz_card .righty_container.sign-in-righty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1 !important;
+}
+
+.signinup_page .hoz_card .righty_container.sign-in-righty.hide {
+  opacity: 0;
+  display: none;
+}
+
+.forgot_password_modal .modal-content .modal-header h5,
+.forgot_password_confirmation_modal .modal-content .modal-header h5 {
+  font-size: 14px !important;
+}
+
+.forgot_password_modal .modal-content .modal-body,
+.forgot_password_confirmation_modal .modal-content .modal-body {
+  font-size: 14px;
+}
+
+.forgot_password_modal .modal-content .modal-footer,
+.forgot_password_confirmation_modal .modal-content .modal-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 0 !important;
+}
+
+.forgot_password_modal .modal-content .modal-footer a,
+.forgot_password_confirmation_modal .modal-content .modal-footer a {
+  width: 50%;
+  margin: 0 !important;
+  padding: 12px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.forgot_password_modal .modal-content .modal-footer a:first-child,
+.forgot_password_confirmation_modal .modal-content .modal-footer a:first-child {
+  border-right: 1px solid #DEDEDE;
+}
+
+.forgot_password_modal .modal-content .modal-footer a:last-child,
+.forgot_password_confirmation_modal .modal-content .modal-footer a:last-child {
+  color: #0E95FF;
+}
+
+.forgot_password_modal form,
+.forgot_password_confirmation_modal form {
+  margin-top: 20px;
+}
+
+.forgot_password_modal form label,
+.forgot_password_modal form input,
+.forgot_password_confirmation_modal form label,
+.forgot_password_confirmation_modal form input {
+  color: #aaaaaa;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.forgot_password_modal form input,
+.forgot_password_confirmation_modal form input {
+  color: #000;
+  border: none;
+  border-bottom: 2px solid #dedede;
+  border-radius: 0;
+  padding-left: 0;
+}
+
+.forgot_password_modal form input:focus,
+.forgot_password_confirmation_modal form input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-bottom: 2px solid #0e95ff;
+}
+
+.forgot_password_modal form input::-webkit-input-placeholder,
+.forgot_password_confirmation_modal form input::-webkit-input-placeholder {
+  color: #AAAAAA;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.forgot_password_modal form input:-ms-input-placeholder,
+.forgot_password_confirmation_modal form input:-ms-input-placeholder {
+  color: #AAAAAA;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.forgot_password_modal form input::-ms-input-placeholder,
+.forgot_password_confirmation_modal form input::-ms-input-placeholder {
+  color: #AAAAAA;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.forgot_password_modal form input::placeholder,
+.forgot_password_confirmation_modal form input::placeholder {
+  color: #AAAAAA;
+  font-size: 14px;
+  font-weight: normal;
+}
+/*# sourceMappingURL=signinup.css.map */
