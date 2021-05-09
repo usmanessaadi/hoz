@@ -79,7 +79,7 @@
                     <div class="collapse navbar-collapse bg-white" id="navbarNava">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" href="{{Route('shop')}}">Shop <span class="sr-only">(current)</span></a>
+                                <a class="nav-link active" href="{{Route('main-shop')}}">Shop <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Promotions</a>
@@ -363,7 +363,7 @@
 
          </header>
 
-        <main class="">
+        <main style="min-height:63vh" class="">
             @yield('content')
         </main>
         <footer id="footer" class="container-fluid">
@@ -408,7 +408,7 @@
                             <li><a class="footer_sub_item" href="{{Route('home')}}">Home</a></li>
                             <li><a class="footer_sub_item" href="{{Route('shop')}}">Shop</a></li>
                             <li><a class="footer_sub_item" href="#">Our Promises</a></li>
-                            <li><a class="footer_sub_item" href="#">Abou Us</a></li>
+                            <li><a class="footer_sub_item" href="#">About Us</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-md-2">

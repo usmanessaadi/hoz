@@ -143,6 +143,8 @@ Route::group(['prefix' => 'order_sub'], function () {
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'HomeController@index')->name('home-page');
+Route::get('/privacy-policy', 'HomeController@privacypolicy')->name('privacy-policy');
+Route::get('/shop', 'HomeController@shop')->name('main-shop');
 
 Route::get('/shop/{category?}', 'ProductController@shop')->name('shop');
 

@@ -36,4 +36,14 @@ class HomeController extends Controller
     {
         return view('shop');
     }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function privacypolicy()
+    {
+        return view('privacy-policy');
+    }
 }
