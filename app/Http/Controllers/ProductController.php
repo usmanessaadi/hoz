@@ -100,6 +100,11 @@ class ProductController extends Controller
 
         $get_prduct_siblings = Product_Detail::where([$product_type_id => $product[$product_type_id]]);
         $colors = Color::whereIn('id', $get_prduct_siblings->get('color_id')->toArray())->get();
+        $relatedProducts = Product_Detail::
+                                    whereNotNull($product_type_id)
+                                    ->where($product_type_id ,'!=',$product[$product_type_id])
+                                    ->limit(10)
+                                    ->get();
 
 
 
@@ -146,7 +151,7 @@ class ProductController extends Controller
                 return response()->json(array('success' => true, 'details' => $returnproduct_details));
             }
 
-            return view('product-page', compact('product', 'colors', 'avialable_unlock_methodos'));
+            return view('product-page', compact('product', 'colors', 'avialable_unlock_methodos','relatedProducts'));
         } else {
             if ($request->ajax()) {
 
@@ -158,7 +163,7 @@ class ProductController extends Controller
                 return response()->json(array('success' => true, 'details' => $returnproduct_details));
             }
             // return $product;
-            return view('product-page', compact('product', 'colors'));
+            return view('product-page', compact('product', 'colors','relatedProducts'));
         }
     }
 

@@ -18,6 +18,7 @@
             @csrf
             <div class="form-row">
                 <div class="col-md-8">
+                <!-- hey 1 -->
                     <select class="mdb-select md-form" id="color-select" name="color_id">
                         <option value="" disabled selected>Choose your Color</option>
                         @foreach ($colors as $color)

@@ -23,14 +23,26 @@
             @csrf
             <div class="form-row">
                 <div class="col-md-12">
+                <!-- hey 3 -->
                     <select class="mdb-select md-form" id="color-select" name="color_id" data-header-id="headingOne1">
                         <option value="" disabled selected>Choose your Color</option>
+                        <option value="hoz_create_new_color" >Create a new one</option>
                         @foreach ($colors as $color)
                         <option value="{{$color->id}}" data-rgb="{{$color->color_rgb}}"> {{$color->color_name}}</option>
                         @endforeach
-
                       </select>
                 </div>
+
+                <div class="col-md-12" id="color-picker-name" style='display:none'>
+                    <label for="validationColorPickerName">Color Picker Name</label>
+                    <input type="text" name="color_name" class="form-control" >
+                </div>
+                <div class="col-md-12"  id="color-picker-value"  style='display:none'>
+                    <label for="validationColorPicker">Color Picker</label>
+                    <input type="color" name="color_code" class="form-control" >
+                
+                </div>
+                
                 <div class="col-md-2 d-none">
                     <button type="button" class="btn " id="color-preview" style="color: white">picked color</button>
                 </div>
@@ -78,7 +90,6 @@
 <!-- Accordion card -->
   @push('scripts')
   {{-- <script>
-
        Dropzone.options.fileUpload = {
            url: "admin/product/details/{{$type}}/{{$id}}",
            addRemoveLinks: true,
@@ -96,5 +107,27 @@
                file.previewElement.classList.add("dz-complete");
            }
        }
+       
+       $(document).on('change','#color-picker-name',function(e){
+           console.log($colors)
+        })
 <script> --}}
+@endpush
+@push('scripts')
+    <script>
+        console.log('do something 2')
+        $(document).on('change','#color-select',function(e){
+            console.log(e.target.value )
+           if(e.target.value != 'hoz_create_new_color'){
+            $('#color-picker-name')[0].style.display = 'none'
+            // $('#color-picker-name')[0].attr("required", "false")
+            $('#color-picker-value')[0].style.display = 'none'
+           }else{
+            $('#color-picker-name')[0].style.display = 'block'
+            // $('#color-picker-name')[0].attr("required", "true")
+            $('#color-picker-value')[0].style.display = 'block'
+           }
+            // $('#color-picker-form').trigger('submit')
+        })
+    </script>
 @endpush

@@ -9,12 +9,16 @@ use App\Digital_Lock;
 use App\Digital_Lock_Type;
 use App\Door;
 use App\Gate;
+use App\Mail\TestEmail;
 use App\Product_Detail;
 use App\Color;
 use App\Image;
 use App\Order;
 use App\Product;
 use Illuminate\Http\Request;
+
+
+use Illuminate\Support\Facades\Mail;
 
 class AdminController extends Controller
 {
@@ -96,6 +100,7 @@ class AdminController extends Controller
     }
     public function addProduct(Request $request, $type){
 
+        // Mail::to('yo@gmail.com')->send(new TestEmail());
         if($request->isMethod('post')){
             if($type == "doors"){
                 $validated = $request->validate([
@@ -127,6 +132,7 @@ class AdminController extends Controller
                 $new_gate->brand = $request->brand;
                 $new_gate->dimensions = $request->dimensions;
                 $new_gate->description = $request->description;
+                $new_gate->with_upsell = $request->with_upsell ? true : false;
                 $new_gate->save();
                 $prd_type = "gates";
                 $prd_id =$new_gate->id;
@@ -189,13 +195,26 @@ class AdminController extends Controller
     public function addProductDetails(Request $request, $type, $id, $addnewElem = false){
 
         if($request->isMethod('post')){
-
             /*Insert your data*/
             $new_product_details = new Product_Detail();
+
+            // create a new color in db
+            if($request->color_id == 'hoz_create_new_color'){
+                $color_name = $request->color_name;
+                $color_code = $this->hexToRgb($request->color_code);
+                
+                $new_color = new Color();
+                $new_color->color_name = $color_name;
+                $new_color->color_rgb = $color_code;
+                $new_color->save();
+                $new_product_details->color_id = $new_color->id;
+            } else {
+                $new_product_details->color_id = $request->color_id;
+            }
+           
             $new_product_details->price = $request->price;
             $new_product_details->stock = $request->stock;
             $new_product_details->discount = $request->discount;
-            $new_product_details->color_id = $request->color_id;
 
             if($type == "doors"){
                 $door = Door::find($id);
@@ -598,5 +617,11 @@ class AdminController extends Controller
 
 
     }
+
+    private function hexToRgb($hex) {
+        info($hex);
+        list($r, $g, $b) = sscanf($hex, "#%02x%02x%02x");
+        return("rgb(".$r.",".$g.",".$b.")");
+      }
 
 }

@@ -11,7 +11,7 @@
 
     <div class="product_colors">
         <span>current color : <b>{{$product->color->color_name}}</b></span>
-        <p>Choose a colour: </p>
+        <p>Choose a color: </p>
         <form action="{{route('view-product',$product->slug ?? 'not_found' )}}" id="color-picker-form" method="get">
 
             <select name="color_picker" id="color-picker">

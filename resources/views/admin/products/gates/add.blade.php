@@ -14,7 +14,7 @@
 @endif
 <h4 class="text-center my-3"> Add New Gate</h4>
 <div class="container py-5 px-5 example z-depth-5">
-    <form action="{{Route('add-product',["type"=>'gates'])}}" method="post" enctype="multipart/form-data">
+    <form action="{{Route('add-product',['type'=>'gates'])}}" method="post" enctype="multipart/form-data">
         @csrf
         <div class="form-row">
           <div class="col-md-6 mb-3 md-form">
@@ -32,10 +32,21 @@
             <div class="col-md-9 mb-3 md-form">
                 <div class="md-form">
                     <label for="validationDefault22">dimensions</label>
+                    <!-- <select  class="prd-page-select" name="dimensions" id="validationDefault22" required >
+                        <option value="200"> 200</option>
+                        <option value="300"> 300</option>
+                    </select> -->
                     <input type="text" name="dimensions" value="{{old('dimensions')}}"   required class="form-control" id="validationDefault22" value="" required>
                 </div>
             </div>
         </div>
+        
+        <div class="custom-control  custom-checkbox mr-sm-2 mt-3">
+                <input type="checkbox" class="custom-control-input" name="with_upsell" id="gateWithUpsell" />
+                <label class="custom-control-label product_requirement pl-2" for="gateWithUpsell">
+                    With Upsell
+                </label>
+            </div>
         <div class="form-row">
             <div class="col-md-9 mb-3 md-form">
                     <textarea id="form7" name="description" required class="md-textarea form-control" rows="3">{{old('description')}}</textarea>

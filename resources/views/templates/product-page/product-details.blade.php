@@ -68,7 +68,7 @@
 
             <div class="product_colors">
                 <span>current color : <b>{{$product->color->color_name}}</b></span>
-                <p>Choose a colour: </p>
+                <p>Choose a color: </p>
                 <form action="{{route('view-product',$product->slug ?? 'not_found' )}}" id="color-picker-form" method="get">
 
                     <select class="prd-page-select" name="color_picker" id="color-picker">
@@ -78,7 +78,11 @@
                     </select>
                 </form>
             </div>
-
+            @if(product->get_product('with_upsell'))
+                <div>
+                    gate upsells ...
+                </div>
+            @endif
             <div class="product_cta">
                 <button class="add_to_cart_btn btn mr-3" data-product="{{$product->id}}">
                     <i class="add-to-cart-icon"></i> Add To cart

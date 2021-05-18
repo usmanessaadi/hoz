@@ -33,6 +33,7 @@
                             <input type="hidden" name="action" value="edit">
                             <div class="form-row">
                                 <div class="col-md-12">
+                                <!-- hey 2 -->
                                     <select class="mdb-select md-form" id="color-select" name="color_id" data-header-id="headingOne{{$product->id}}">
                                         <option value="" disabled selected>Choose your Color</option>
                                         @foreach ($colors as $color)
