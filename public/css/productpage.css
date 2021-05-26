@@ -898,4 +898,34 @@ footer .bottom_footer p {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
+
+.upsells{
+  display: flex;
+  flex-wrap: wrap;
+}
+.upsellBox {
+  border: #DEDEDE 1px solid;
+  border-radius: 5px;
+  display: flex;
+  margin: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.upsellBox.selected {
+  border: #0E95FF 1px solid;
+}
+.upsellBox .check{
+  /* margin: 0 7px; */
+}
+.upsellBox .label{
+  margin: 0 3px 0 10px;
+}
+.upsellBox .price{
+  color: #AAAAAA;
+  /* margin: 0 7px; */
+}
+.upsellBox.selected .price{
+  color: #0E95FF;
+  /* margin: 0 7px; */
+}
 /*# sourceMappingURL=productpage.css.map */

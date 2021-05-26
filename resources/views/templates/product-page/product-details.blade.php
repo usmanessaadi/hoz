@@ -68,7 +68,7 @@
 
             <div class="product_colors">
                 <span>current color : <b>{{$product->color->color_name}}</b></span>
-                <p>Choose a color: </p>
+               
                 <form action="{{route('view-product',$product->slug ?? 'not_found' )}}" id="color-picker-form" method="get">
 
                     <select class="prd-page-select" name="color_picker" id="color-picker">
@@ -78,9 +78,34 @@
                     </select>
                 </form>
             </div>
-            @if(product->get_product('with_upsell'))
-                <div>
-                    gate upsells ...
+            @if($product->get_product('with_upsell'))
+                <div style="    margin-top: 14px;">Customization: </div>
+                <div class="upsells"> 
+                    <div class="upsellBox" id="upsell_bottom_plate" onclick="upsellSelect('upsell_bottom_plate')">
+                        <div class="check"><input type="checkbox" /></div>
+                        <div class="label">Bottom Plate</div>
+                        <div class="price">($35)</div>
+                    </div>
+                    <div class="upsellBox" id="upsell_digital_plate" onclick="upsellSelect('upsell_digital_plate')">
+                        <div class="check"><input type="checkbox" /></div>
+                        <div class="label">Digital Plate</div>
+                        <div class="price">($35)</div>
+                    </div>
+                    <div class="upsellBox" id="upsell_laser_cutting_number" onclick="upsellSelect('upsell_laser_cutting_number')">
+                        <div class="check"><input type="checkbox" /></div>
+                        <div class="label">Laser Cutting (Door Number)</div>
+                        <div class="price">($110)</div>
+                    </div>
+                    <div class="upsellBox" id="upsell_laser_cutting_animals" onclick="upsellSelect('upsell_laser_cutting_animals')">
+                        <div class="check"><input type="checkbox" /></div>
+                        <div class="label">Laser Cutting (Animals)</div>
+                        <div class="price">($110)</div>
+                    </div>
+                    <div class="upsellBox selected" id="upsell_personalized_color" onclick="upsellSelect('upsell_personalized_color')">
+                        <div class="check"><input type="checkbox" checked/></div>
+                        <div class="label">Personalized Color</div>
+                        <div class="price">(Starting from $50, paid separately)</div>
+                    </div>
                 </div>
             @endif
             <div class="product_cta">
@@ -214,3 +239,12 @@
         </p>
     </div>
 </div>
+
+
+<script>
+   function upsellSelect(id){
+       console.log(id)
+    $('#'+id).toggleClass("selected")
+    $('#'+id+' input').attr('checked', $('#'+id).hasClass('selected'))
+   }
+</script>
