@@ -70,7 +70,7 @@
                     <img src="{{asset('/assets/logos/atome.png')}}" class="ml-1" alt="atom hoz digital lucks" />
                 </div>
             </div>
-            <a  href='{{route('palce-order')}}' class=" btn checkout-btn">Proceed to checkout</a>
+            <a  href='{{route("palce-order")}}' class=" btn checkout-btn">Proceed to checkout</a>
 
         <p class="cart-items-count "><span class="cart_items_number_badge">0</span> Items</p>
             @else
