@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @push('style')
-    <link href="{{ asset('css/SignInUp.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/signinup.css') }}" rel="stylesheet">
 @endpush
 @section('content')
 {{--<div class="container">--}}

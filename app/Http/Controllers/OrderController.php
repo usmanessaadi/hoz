@@ -11,12 +11,22 @@ use Illuminate\Support\Facades\Session;
 
 class OrderController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     public function place_order(Request $request){
 
        // return session('cart');
         // Session::forget('cart');
 
         // return session('cart');
+        if(Auth::check()){
+        
+        }else{
+
+        }
         $order = new Order();
         $order->user_id = Auth::user()->id;
         $order->order_number = strtoupper(substr(uniqid(sha1(time())),0,10));
