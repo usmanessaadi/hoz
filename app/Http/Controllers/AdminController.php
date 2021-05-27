@@ -195,34 +195,6 @@ class AdminController extends Controller
     public function addProductDetails(Request $request, $type, $id, $addnewElem = false){
 
         if($request->isMethod('post')){
-
-
-            if($files=$request->input("files")){
-                $countr = 0;
-                foreach($files as $file){
-                    if($file != null){
-                        if(!is_null($file)){
-                            $countr++;
-                            $img = $file;
-                            $image_parts = explode(";base64,", $img);
-                            $image_type_aux = explode("image/", $image_parts[0]);
-                            $image_type = $image_type_aux[1];
-                            $image_base64 = base64_decode($image_parts[1]);
-                            $file_name = uniqid() . '.'.$image_type;
-                            $path = "storage/products/" . $file_name;
-                            //@unlink(COVER_UPLOAD_PATH . $user->cover_photo);
-                            file_put_contents($path, $image_base64);
-
-                        }
-                    }
-
-
-                }
-
-            }
-
-
-
             /*Insert your data*/
             $new_product_details = new Product_Detail();
 
